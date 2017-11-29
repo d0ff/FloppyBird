@@ -170,21 +170,21 @@ function gameloop() {
    }
    
    //did we hit the ground?
-  /* if(box.bottom >= $("#land").offset().top)
+   if(box.bottom >= $("#land").offset().top)
    {
       playerDead();
       return;
    }
-  */ 
+   
    //have they tried to escape through the ceiling? :o
    var ceiling = $("#ceiling");
    if(boxtop <= (ceiling.offset().top + ceiling.height()))
       position = 0;
    
    //we can't go any further without a pipe
-   if(pipes[0] == null)
+  /* if(pipes[0] == null)
       return;
-   
+  */ 
    //determine the bounding box of the next pipes inner area
    var nextpipe = pipes[0];
    var nextpipeupper = nextpipe.children(".pipe_upper");
@@ -214,9 +214,9 @@ function gameloop() {
       }
       else
       {
-         //no! we touched the pipe
+        /* //no! we touched the pipe
          playerDead();
-         return;
+         return;     */
       }
    }
    
