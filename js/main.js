@@ -170,12 +170,12 @@ function gameloop() {
    }
    
    //did we hit the ground?
-   if(box.bottom >= $("#land").offset().top)
+  /* if(box.bottom >= $("#land").offset().top)
    {
       playerDead();
       return;
    }
-   
+  */ 
    //have they tried to escape through the ceiling? :o
    var ceiling = $("#ceiling");
    if(boxtop <= (ceiling.offset().top + ceiling.height()))
